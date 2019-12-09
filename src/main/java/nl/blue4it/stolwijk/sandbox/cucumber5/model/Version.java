@@ -18,4 +18,13 @@ public class Version {
         this.minor = Integer.parseInt(parts[1]);
         this.patch = Integer.parseInt(parts[2]);
     }
+
+    @Override
+    public String toString() {
+        return "Version{" +
+                "major=" + major +
+                ", minor=" + minor +
+                ", patch=" + patch +
+                '}';
+    }
 }
